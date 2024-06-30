@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>master class css selectors</title>
+    <style>
+        /*class selector*/
+        .red{
+            background-color: red;
+        }
+        /* Id selector*/
+        #green{
+            background-color: green;
+        }
+        /* child selectors*/
+        div>p{
+            color: blue;
+            background-color: brown;
+        }
+        /* descendant selector*  means div k andar k andar ho para color change hoga */
+        div p{
+            color: blue;
+            background-color: brown;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*pseudo selector*/
+        a:visited{
+            color:darkmagenta
+        }
+        a:link{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+      I am a div
+      <!-- yaha pe article ki wajah se para ka color change nhi ho rha hai -->
+      <article>
+      <p> I am a insider div</p>
+    </article>
+    </div>
+    <div id="green">
+        I am another div
+    </div>
+        <a href="http://www.google.com">open google</a>
+        <a href="http:www.facebook2.com">Go to facebook</a>
+        <a href="http://www.codewithharry.com">open harry</a>
+</body>
+</html>
